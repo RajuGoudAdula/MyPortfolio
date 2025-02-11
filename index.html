@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raju Goud Adula - Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function toggleSidebar() {
+        let sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("show"); // Adds or removes the "show" class
+    }
+    
+    </script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="header-container">
+            <h2 class="logo"><i class="fas fa-code"></i> Raju Goud</h2>
+
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+             <!-- Hamburger Menu for Mobile -->
+            <div class="hamburger" onclick="toggleSidebar()">
+                ☰
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar (Hidden by Default) -->
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
+        <ul>
+            <li><a href="#about" onclick="toggleSidebar()">About</a></li>
+            <li><a href="#skills" onclick="toggleSidebar()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleSidebar()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleSidebar()">Contact</a></li>
+            <li><a href="resume.pdf" target="_blank" onclick="toggleSidebar()">Resume</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-image">
+            <img src="Profile.jpg" />
+        </div>
+        <div class="hero-content">
+            <h1>Hi, I'm Raju Goud Adula</h1>
+            <p>🚀 Full Stack Developer | Problem Solver </p>
+                <p>💻 Skilled in Java, React.js, Node.js, and MySQL</p>
+                <p>📌 Passionate about  scalable web applications, and real-time systems</p>
+        </div>
+    </section>
+
+    <hr />
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate Computer Science Engineering student at Keshav Memorial Engineering College,
+                Hyderabad, with a strong foundation in Java, React.js, Node.js, and MySQL. My expertise extends
+                 to Data Structures and Algorithms (DSA) using Java, and I love solving complex problems with 
+                 efficient code.I have worked on projects like HD Downloader, a seamless YouTube video downloading
+                  tool, and SwiftBite, a real-time canteen ordering system with QR-based pickup and Paytm integration.
+                  Always eager to learn and innovate, I continuously explore the latest technologies to build scalable
+                   and efficient web applications.
+            </p>
+        </div>
+    </section>
+
+    <hr />
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="skills-container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <span>Java</span>
+                <span>DSA using java</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>MySQL</span>
+                <span>MongoDB</span>
+            </div>
+        </div>
+    </section>
+
+    <hr />
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="projects-container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <a href="https://github.com/RajuGoudAdula/HdDownloader-using-ReactJs-and-Flask" class="btn">
+                    <div class="project-card">
+                        <div class="project-title">
+                            <h3>HdDownloader</h3>
+                        </div>
+                        <div class="project-desc">
+                            <p>A web application for seamless YouTube video downloads, rebuilt to adapt to YouTube's latest
+                                updates and downloads 2k and 4k videos.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/RajuGoudAdula/SwiftBite" class="btn">
+                    <div class="project-card">
+                        <div class="project-title">
+                            <h3>SwiftBite</h3>
+                        </div>
+                        <div class="project-desc">
+                            <p>An application for college students to order food from the college canteen with real-time order
+                                tracking and QR-based pickup
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/RajuGoudAdula/FaceRecognizationAttendanceSystem" class="btn">
+                    <div class="project-card">
+                        <div class="project-title">
+                            <h3>Attendance System</h3>
+                        </div>
+                        <div class="project-desc">
+                            <p>The Attendance System is a machine learning application 
+                                designed to automate attendance tracking using facial recognition technology.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <hr />
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#EA4335">
+                    <path d="M12 12.713l-11.885-7.713 11.885-5 11.885 5zm0 2.287l-12-7.8v10.8c0 1.104.896 2 2 2h20c1.104 0 2-.896 2-2v-10.8zm-10 1.905v-7.036l10 6.514 10-6.514v7.036l-10 6.514z"/>
+                </svg>
+                <a href="mailto:rajadula698@gmail.com">rajadula698@gmail.com</a>
+            </p>
+            
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#181717">
+                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.385.6.113.793-.258.793-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.083-.729.083-.729 1.205.084 1.838 1.24 1.838 1.24 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.304.76-1.604-2.665-.305-5.466-1.335-5.466-5.932 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.526.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.65.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.21 0 1.59-.015 2.87-.015 3.26 0 .315.195.69.81.57 4.77-1.585 8.2-6.08 8.2-11.38 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                <a href="http://github.com/RajuGoudAdula" target="_blank">github.com/RajuGoudAdula</a>
+            </p>
+            
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#0077B5">
+                    <path d="M22.23 0H1.77C.79 0 0 .77 0 1.7v20.6c0 .93.79 1.7 1.77 1.7h20.46c.98 0 1.77-.77 1.77-1.7V1.7C24 .77 23.21 0 22.23 0zM7.09 20.46H3.56V9h3.53v11.46zM5.32 7.56a2.05 2.05 0 110-4.1 2.05 2.05 0 010 4.1zM20.46 20.46h-3.53v-5.6c0-1.34-.03-3.07-1.87-3.07-1.88 0-2.17 1.46-2.17 2.97v5.7h-3.53V9h3.38v1.56h.05c.47-.9 1.62-1.86 3.34-1.86 3.57 0 4.23 2.35 4.23 5.41v6.35z"/>
+                </svg>
+                <a href="https://www.linkedin.com/in/rajugoudadula/" target="_blank">linkedin.com/in/rajugoudadula/</a>
+            </p>
+        </div>
+    </section>
+</body>
+</html>
