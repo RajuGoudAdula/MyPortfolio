@@ -210,7 +210,7 @@ a{
     top: 0;
     right: -250px; /* Initially hidden */
     width: 200px;
-    height: 32%;
+    height: auto;
     background-color: rgb(232, 234, 237);
     color: white;
     padding-top: 40px;
